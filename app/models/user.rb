@@ -5,5 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   # Add validation
-  validates :username, uniqueness: true
+  validates :username, uniqueness: true, presence: true
 end
